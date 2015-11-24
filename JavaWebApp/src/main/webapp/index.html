@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <title>Contact List</title>
+    </head>
+    <body onload="getContacts();">
+        
+        <div class="container">
+            <h3>Список контактов</h3>
+
+            <table class="table table-hover" width="100%" id="mytable">
+                <tr>
+                    <th align="left" width="25">Id</th>
+                    <th align="left">ФИО</th>
+                    <th align="left">Телефон</th>
+                    <th align="left">Эл.почта</th>
+                    <th align="left" width="25"></th>
+                </tr>
+            </table>
+            
+            <a href="#addcontact" data-toggle="modal"><button class="btn">Добавить контакт</button></a>
+        </div>
+
+        <!-- Modal -->
+        <form class="form-horizontal">
+            <div id="addcontact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Добавить контакт</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="control-group">
+                        <label class="control-label" for="inputFIO">ФИО:</label>
+                        <div class="controls">
+                            <input type="text" name="inputFIO" placeholder="Иванов И.И." required>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputPhone">Телефон:</label>
+                        <div class="controls">
+                            <input type="text" name="inputPhone" placeholder="+7 812 123 45 67" required>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputEmail">Эл.почта:</label>
+                        <div class="controls">
+                            <input type="email" name="inputEmail" placeholder="username@domain.ru" required>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="addBtn();">Добавить</button>
+                </div>
+            </div>
+        </form>
+
+    </body>
+</html>
+

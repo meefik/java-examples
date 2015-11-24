@@ -1,0 +1,14 @@
+----------------------------------------------------------------
+Mon Sep 23 03:07:32 MSK 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0141-47ed-8b6d-000002ef6340 
+on database directory memory:/home/anton/NetBeansProjects/SpringJDBC/dataSource with class loader sun.misc.Launcher$AppClassLoader@9cc3baa 
+Loaded from file:/home/anton/.m2/repository/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_25-b15
+user.dir=/home/anton/NetBeansProjects/SpringJDBC
+os.name=Linux
+os.arch=amd64
+os.version=3.2.0-4-amd64
+derby.system.home=null
+derby.stream.error.method=org.springframework.jdbc.datasource.embedded.OutputStreamFactory.getNoopOutputStream
+Database Class Loader started - derby.database.classpath=''
